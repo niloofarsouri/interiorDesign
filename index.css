@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+
+.item {
+    height: 100%;
+    background-color: lightblue;
+    color: white;
+    transition: 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem; */
+}
+
+#room1 {
+    flex: 1;
+    background: url(./img/gallery-1.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#room2 {
+    flex: 1;
+    background: url(./img/gallery-2.jpg);
+    background-size: cover;
+}
+
+#room3 {
+    flex: 1;
+    background: url(./img/gallery-3.jpg);
+    background-size: cover;
+}
+
+#room4 {
+    flex: 1;
+    background: url(./img/gallery-4.jpg);
+    background-size: cover;
+}
+
+#room5 {
+    flex: 1;
+    background-color: darkorange;
+}
+
+
+.item h2 {
+    opacity: 0;
+    transition: 1s;
+    transform: scale(1);
+}
+
+.item img {
+    opacity: 0;
+}
+
+.item:hover {
+    flex: 2.5 !important;
+    transition: 1.3s;
+    padding: 1.5rem;
+}
+
+.item:hover h2 {
+    opacity: 1;
+    transition: 1.5s;
+    transform: scale(1.2);
+}
+
+.item:hover img {
+    opacity: 1;
+}
+
+.yellow-box {
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    margin-top: 400px;
+    opacity: 0;
+
+}
+
+.item:hover .yellow-box {
+    opacity: 0.5;
+    background-color: darkorange;
+}
